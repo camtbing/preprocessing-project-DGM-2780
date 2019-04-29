@@ -6,28 +6,30 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/index.css">
     <title>Books</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <script src="animation.js"></script>
 </head>
-<body>
+<body onload="animateLogo();">
     <header class= "main-header">
 		<nav>
-			<a href="index.html"><img src="images/BookLogo.jpg" alt="BookLogo"></a>
-			<a href="index.html">Home</a>
-			<a href="">About</a>
-			<a href="">Blog</a>
-			<a href="">Contact</a>
-			<a href="books.html">Books</a>
-			<a href="">Magazines</a>
-			<a href=""><img src="images/Search.jpg" alt="Search"></a>
-			<a href=""><img src="images/Cart.jpg" alt="Cart"></a>
+			<a href="index.html" id="mainLogo"><img src="images/BookLogo.jpg" alt="BookLogo"></a>
+			<a href="index.html" id="link1" onmouseover="hoverBounce1();" onmouseout="reset1();">Home</a>
+			<a href="" id="link2" onmouseover="hoverBounce2();" onmouseout="reset2();">About</a>
+			<a href="" id="link3"onmouseover="hoverBounce3();" onmouseout="reset3();">Blog</a>
+			<a href="" id="link4" onmouseover="hoverBounce4();" onmouseout="reset4();">Contact</a>
+			<a href="books.html" id="link5" onmouseover="hoverBounce5();" onmouseout="reset5();">Books</a>
+			<a href="" id="link6" onmouseover="hoverBounce6();" onmouseout="reset6();">Magazines</a>
+			<a href="" ><img src="images/Search.jpg" alt="Search"></a>
+			<a href="" ><img src="images/Cart.jpg" alt="Cart"></a>
 		</nav>
     </header>
     
     <div class="container4">
-        <a href=""><img src="images/book.jpg" alt="book"></a>
-        <a href=""><img src="images/books.jpg" alt="books"></a>
-        <a href=""><img src="images/openBook.jpg" alt="Open Book"></a>
-        <a href=""><img src="images/magazine.jpg" alt="Magazine"></a>
-        <a href=""><img src="images/download.jpg" alt="Download"></a>
+        <a href="#" id="logo1" onclick="logoRotate1();"><img src="images/book.jpg" alt="book"></a>
+        <a href="#" id="logo2" onclick="logoRotate2();" onclick="logoRotate();"><img src="images/books.jpg" alt="books"></a>
+        <a href="#" id="logo3" onclick="logoRotate3();" onclick="logoRotate();"><img src="images/openBook.jpg" alt="Open Book"></a>
+        <a href="#" id="logo4" onclick="logoRotate4();" onclick="logoRotate();"><img src="images/magazine.jpg" alt="Magazine"></a>
+        <a href="#" id="logo5" onclick="logoRotate5();" onclick="logoRotate();"><img src="images/download.jpg" alt="Download"></a>
     </div>
 
     <div class="container5">
